@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Instagram Marketing Masterclass</h1>
+  <p>Complete your payment to access the video:</p>
+  <button onclick="pay()">Pay ₹499</button>
+
+  <div id="video" style="display: none; margin-top: 20px;">
+    <h3>Course Video:</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <script>
+    function pay() {
+      alert("Payment successful! Showing video...");
+      document.getElementById("video").style.display = "block";
+    }
+  </script>
+</body>
+</html>
